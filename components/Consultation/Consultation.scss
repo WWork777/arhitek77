@@ -1,0 +1,324 @@
+.consultation-block {
+  padding: 80px 0;
+  background-color: #f0f0f0;
+  font-family: inherit;
+
+  .consultation-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .consultation-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .consultation-main-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .consultation-content {
+    padding: 40px;
+    order: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .consultation-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .consultation-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .contact-methods {
+    .contact-title {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .contact-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      align-items: center;
+      margin-top: 50px;
+
+      .btn {
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 12px;
+        width: 100%;
+        background: white;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        position: relative;
+        text-align: left;
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .btn-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          margin-right: 15px;
+          flex-shrink: 0;
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .contact-icon {
+          width: 24px;
+          height: 24px;
+          filter: brightness(0) invert(1);
+        }
+
+        .contact-text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .consultation-image-section {
+    order: 2;
+    width: 100%;
+
+    .consultation-image {
+      width: 100%;
+      height: auto;
+
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .manager-info {
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+
+      .manager-name {
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+
+      .manager-position {
+        font-size: 0.9rem;
+        color: #777;
+      }
+    }
+  }
+}
+
+// Компьютерная версия (1280px и выше)
+@media (min-width: 1280px) {
+  .consultation-block {
+    .consultation-wrapper {
+      flex-direction: row;
+    }
+
+    .consultation-content {
+      width: 100%;
+      padding: 50px;
+      order: 1;
+    }
+
+    .contact-methods {
+      .contact-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    .consultation-image-section {
+      width: 50%;
+      order: 2;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      .consultation-image {
+        height: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+
+        .image {
+          height: 100%;
+          min-height: 400px;
+        }
+      }
+
+      .manager-info {
+        padding: 25px;
+      }
+    }
+  }
+}
+
+// Ноутбучная версия (1024px - 1279px)
+@media (max-width: 1279px) {
+  .consultation-block {
+    padding: 70px 0;
+
+    .consultation-content {
+      padding: 40px;
+    }
+
+    .consultation-title {
+      font-size: 1.6rem;
+    }
+
+    .consultation-description {
+      font-size: 1rem;
+    }
+
+    .contact-methods {
+      .contact-title {
+        font-size: 1.1rem;
+      }
+
+      .contact-buttons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+// Планшетная версия (768px - 1023px)
+@media (max-width: 1023px) {
+  .consultation-block {
+    padding: 60px 0;
+
+    .consultation-content {
+      padding: 35px 30px;
+    }
+
+    .consultation-title {
+      font-size: 1.5rem;
+    }
+
+    .consultation-description {
+      font-size: 0.95rem;
+    }
+
+    .contact-methods {
+      .contact-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+    }
+  }
+}
+
+// Мобильная версия (до 767px)
+@media (max-width: 767px) {
+  .consultation-block {
+    padding: 50px 0;
+
+    .consultation-container {
+      width: 95%;
+      max-width: 95%;
+      padding: 0;
+    }
+
+    .consultation-content {
+      padding: 30px 20px;
+    }
+
+    .consultation-main-title {
+      font-size: 1.5rem;
+    }
+
+    .consultation-title {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+
+    .consultation-description {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-methods {
+      .contact-title {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .contact-buttons {
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+        .btn {
+          padding: 12px 15px;
+          font-size: 0.9rem;
+          max-width: none;
+
+          .btn-content {
+            .btn-title {
+              font-size: 0.9rem;
+            }
+            .btn-description {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    .consultation-image-section {
+      .manager-info {
+        padding: 15px;
+
+        .manager-name {
+          font-size: 1rem;
+        }
+
+        .manager-position {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

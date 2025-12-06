@@ -1,0 +1,191 @@
+.disign-price-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    position: relative;
+    
+    h1 {
+     text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.2;
+        
+ 
+    }
+    
+    .disign-price-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .disign-price-item {
+            background-color: white;
+            border-radius: 5px;
+            padding: 40px;
+            max-width: 33%;
+            min-width: 30%;
+            overflow: hidden;
+            transition: height 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative; 
+            height: 500px; 
+            
+          
+            &:not(.expanded)::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 30px;
+                background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+                pointer-events: none;
+            }
+            
+            &.expanded {
+                height: auto;
+                
+                &::after {
+                    display: none;
+                }
+            }
+            
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                color: #000000;
+                margin-bottom: 15px; 
+                text-align: left;
+                line-height: 1.5;
+                @media(max-width: 950px) {
+                    font-size: 16px;
+                }
+                &:last-child {
+                    margin-bottom: 30px;
+                }
+            }
+            
+            h2 {
+                font-size: 28px;
+                font-weight: 200;
+                color: #000000;
+                text-align: center;
+                position: relative;
+                padding-bottom: 15px;
+                @media(max-width: 950px) {
+                    font-size: 24px;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 2px;
+                    background-color: #d2b48c;
+                }
+            }
+            
+            b {
+                display: block;
+                font-size: 24px;
+                font-weight: 600;
+                color: #d2b48c;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 4px;
+                @media(max-width: 950px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
+    button {
+        margin: 0 auto;
+        display: block;
+        padding: 12px 24px;
+        background-color: #d2b48c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @media(max-width: 523px) {
+            font-size: 14px;
+        }
+          @media(max-width: 472px) {
+            font-size: 12px;
+        }
+        &:hover {
+            background-color: darken(#d2b48c, 10%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+@media (max-width: 768px) {
+    .disign-price-grid {
+        flex-direction: column;
+        gap: 30px;
+
+        .disign-price-item {
+            max-width: 100% !important;
+            width: 100%;
+            position: relative;
+            padding: 20px 40px 80px 40px !important;
+            overflow: visible; 
+            max-height: 500px; 
+            transition: max-height 0.3s ease;
+
+            &.expanded {
+                max-height: none; 
+            }
+
+            &:not(.expanded)::after {
+                height: 80px;
+            }
+
+            button {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+                display: block;
+                margin: 0 auto;
+                width: auto;
+                font-weight: 300;
+            }
+
+            b {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .disign-price-container > button {
+        display: none;
+    }
+}
+
+@media(max-width: 420px){
+    button{
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+}

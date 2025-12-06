@@ -1,0 +1,806 @@
+[
+  {
+    "id": 1,
+    "projectName": "Rondo130",
+    "title": "Рондо 130 м2",
+    "desc":"Проект дома Rondo130: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "arhitektor":"Зиброва А.Д",
+    "floors": "2",
+    "slug": "project-Rondo130",
+    "images": [
+      "Rondo130_1",
+      "Rondo130_2",
+      "Rondo130_3",
+      "Rondo130"
+    ],
+    "plans": [
+      "Rondo130_plan1"
+    ],
+    "description": "Проект дома Рондо 130 м2",
+    "specifications": {
+      "totalArea": "130.0",
+      "areaOfTheResidential": "95.0",
+      "otherArea": "35.0",
+      "sizeOfHouse": "12.0 * 10.0",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 2,
+    "projectName": "RockNRoll286",
+    "title": "Рок-н-ролл 286 м2",
+    "desc":"Проект дома RockNRoll286: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "arhitektor":"Богомолова А.А",
+    "floors": "2",
+    "slug": "project-RockNRoll286",
+    "images": [
+      "RockNRoll286_1",
+      "RockNRoll286_2",
+      "RockNRoll286_3",
+      "RockNRoll286_4",
+      "RockNRoll286"
+    ],
+    "plans": [
+      "RockNRoll286_plan1",
+      "RockNRoll286_plan2"
+    ],
+    "description": "Проект дома Ноктюрн 286 м2",
+    "specifications": {
+      "totalArea": "286.0",
+      "areaOfTheResidential": "202.0",
+      "otherArea": "84.0",
+      "sizeOfHouse": "18.0 * 13.6",
+      "floors": "2",
+      "bedrooms": "4",
+      "garagePlaces": "3",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 3,
+    "projectName": "Adazhio298",
+    "title": "Адажио 298 м2",
+    "desc":"Проект дома Adazhio298: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "arhitektor":"Зиброва А.Д",
+    "floors": "2",
+    "slug": "project-Adazhio298",
+    "images": [
+      "Adazhio298",
+      "Adazhio298_1", 
+      "Adazhio298_2", 
+      "Adazhio298_3", 
+      "Adazhio298_4"
+    ],
+    "plans": [
+      "Adazhio298_plan1", 
+      "Adazhio298_plan2"
+    ],
+    "description": "Проект дома Адажио 298 м2",
+    "specifications": {
+      "totalArea": "298.1",
+      "areaOfTheResidential": "212.5",
+      "otherArea": "85.6",
+      "sizeOfHouse": "18.7 * 13.7",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "4",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 4,
+    "projectName": "RockNRoll284",
+    "title": "Рок-н-ролл 284 м2",
+    "desc":"Проект дома RockNRoll284: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "arhitektor":"Богомолова А.А",
+    "floors": "2",
+    "slug": "project-RockNRoll284",
+    "images": [
+      "RockNRoll284_1",
+      "RockNRoll284_2",
+      "RockNRoll284_3",
+      "RockNRoll284_4",
+      "RockNRoll284"
+    ],
+    "plans": [
+      "RockNRoll284_plan1",
+      "RockNRoll284_plan2"
+    ],
+    "description": "Проект дома Рок-н-ролл 284 м2",
+    "specifications": {
+      "totalArea": "284.0",
+      "areaOfTheResidential": "200.0",
+      "otherArea": "84.0",
+      "sizeOfHouse": "18.0 * 13.5",
+      "floors": "2",
+      "bedrooms": "4",
+      "garagePlaces": "3",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 5,
+    "projectName": "RockNRoll305",
+    "title": "Рок-н-ролл 305 м2",
+    "desc":"Проект дома RockNRoll305: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-RockNRoll305",
+    "images": [
+      "RockNRoll305_1",
+      "RockNRoll305_2",
+      "RockNRoll305_3",
+      "RockNRoll305"
+    ],
+    "plans": [
+      "RockNRoll305_plan1"
+    ],
+    "description": "Проект дома Рок-н-ролл 305 м2",
+    "specifications": {
+      "totalArea": "305.0",
+      "areaOfTheResidential": "220.0",
+      "otherArea": "85.0",
+      "sizeOfHouse": "19.0 * 14.0",
+      "floors": "2",
+      "bedrooms": "5",
+      "garagePlaces": "4",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 6,
+    "projectName": "Rondo205",
+    "title": "Рондо 205 м2",
+    "desc":"Проект дома Rondo205: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Rondo205",
+    "images": [
+      "Rondo205_1",
+      "Rondo205_2",
+      "Rondo205_3",
+      "Rondo205"
+    ],
+    "plans": [
+      "Rondo205_plan1",
+      "Rondo205_plan2"
+    ],
+    "description": "Проект дома Рондо 205 м2",
+    "specifications": {
+      "totalArea": "205.0",
+      "areaOfTheResidential": "150.0",
+      "otherArea": "55.0",
+      "sizeOfHouse": "15.0 * 12.0",
+      "floors": "2",
+      "bedrooms": "4",
+      "garagePlaces": "2",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 7,
+    "projectName": "Serenada142",
+    "title": "Серенада 142 м2",
+    "desc":"Проект дома Serenada142: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Богомолова А.А",
+    "slug": "project-Serenada142",
+    "images": [
+      "Serenada142_1",
+      "Serenada142_2",
+      "Serenada142_3",
+      "Serenada142_4",
+      "Serenada142"
+    ],
+    "plans": [
+      "Serenada142_plan1"
+    ],
+    "description": "Проект дома Серенада 142 м2",
+    "specifications": {
+      "totalArea": "142.0",
+      "areaOfTheResidential": "105.0",
+      "otherArea": "37.0",
+      "sizeOfHouse": "12.5 * 10.5",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 8,
+    "projectName": "Regtime132",
+    "title": "Регтайм 132 м2",
+    "desc":"Проект дома Regtime132: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Хавкунова А.В",
+    "slug": "project-Regtime132",
+    "images": [
+      "Regtime132_1",
+      "Regtime132_2",
+      "Regtime132_3",
+      "Regtime132"
+    ],
+    "plans": [
+      "Regtime132_plan1"
+    ],
+    "description": "Проект дома Регтайм 132 м2",
+    "specifications": {
+      "totalArea": "132.0",
+      "areaOfTheResidential": "95.0",
+      "otherArea": "37.0",
+      "sizeOfHouse": "12.0 * 10.0",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 9,
+    "projectName": "Bluz87",
+    "title": "Блюз 87 м2",
+    "desc":"Проект дома Bluz87: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Хавкунова А.В",
+    "slug": "project-Bluz87",
+    "images": [
+      "Bluz87_1",
+      "Bluz87_2",
+      "Bluz87_3",
+      "Bluz87"
+    ],
+    "plans": [
+      "Bluz87_plan1"
+    ],
+    "description": "Проект дома Блюз 87 м2",
+    "specifications": {
+      "totalArea": "87.0",
+      "areaOfTheResidential": "65.0",
+      "otherArea": "22.0",
+      "sizeOfHouse": "10.0 * 8.0",
+      "floors": "2",
+      "bedrooms": "2",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 10,
+    "projectName": "Nocturn87",
+    "title": "Ноктюрн 87 м2",
+    "desc":"Проект дома Nocturn87: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Nocturn87",
+    "images": [
+      "Nocturn87",
+      "Nocturn87_1"
+    ],
+    "plans": [
+      "Nocturn87_plan1"
+    ],
+    "description": "Проект дома Ноктюрн 87 м2",
+    "specifications": {
+      "totalArea": "87.0",
+      "areaOfTheResidential": "65.0",
+      "otherArea": "22.0",
+      "sizeOfHouse": "10.0 * 8.0",
+      "floors": "2",
+      "bedrooms": "2",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "-",
+      "wallMaterialOnTheSecondFloor": "-",
+      "foundationType": "-",
+      "TypeOfOverlap": "-",
+      "insulation": "-",
+      "roof": "-",
+      "windows": "-",
+      "frontDoor": "-",
+      "finishing": "-"
+    }
+  },
+  {
+    "id": 11,
+    "projectName": "Nocturn115",
+    "title": "Ноктюрн 115 м2",
+    "desc":"Проект дома Nocturn115: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Nocturn115",
+    "images": [
+      "Nocturn115_1",
+      "Nocturn115_2",
+      "Nocturn115_3",
+      "Nocturn115_4",
+      "Nocturn115"
+    ],
+    "plans": [
+      "Nocturn115_plan1"
+    ],
+    "description": "Проект дома Ноктюрн 115 м2",
+    "specifications": {
+      "totalArea": "115.0",
+      "areaOfTheResidential": "85.0",
+      "otherArea": "30.0",
+      "sizeOfHouse": "11.5 * 9.5",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id":12,
+    "projectName": "Nocturn109",
+    "title": "Ноктюрн 109 м2",
+    "desc":"Проект дома Nocturn109: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Nocturn109",
+    "images": [
+      "Nocturn109_1",
+      "Nocturn109_2",
+      "Nocturn109_3",
+      "Nocturn109_4",
+      "Nocturn109"
+    ],
+    "plans": [
+      "Nocturn109_plan1"
+    ],
+    "description": "Проект дома Ноктюрн 109 м2",
+    "specifications": {
+      "totalArea": "109.0",
+      "areaOfTheResidential": "80.0",
+      "otherArea": "29.0",
+      "sizeOfHouse": "11.0 * 9.0",
+      "floors": "2",
+      "bedrooms": "2",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 13,
+    "projectName": "Ballada178",
+    "title": "Баллада 178 м2",
+    "desc":"Проект дома Ballada178: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Ballada178",
+    "images": [
+      "Ballada178_1", 
+      "Ballada178_2", 
+      "Ballada178_3", 
+      "Ballada178"
+    ],
+    "plans": [
+      "Ballada178_plan1", 
+      "Ballada178_plan2"
+    ],
+    "description": "Проект дома Баллада 178 м2",
+    "specifications": {
+      "totalArea": "178.0",
+      "areaOfTheResidential": "130.0",
+      "otherArea": "48.0",
+      "sizeOfHouse": "15.0 * 10.5",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "2",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 14,
+    "projectName": "ValsBoston137",
+    "title": "Вальс бостон 137 м2",
+    "desc":"Проект дома ValsBoston137: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-ValsBoston137",
+    "images": [
+      "ValsBoston137_1",
+      "ValsBoston137_2",
+      "ValsBoston137_3",
+      "ValsBoston137"
+    ],
+    "plans": [
+      "ValsBoston137_plan1"
+    ],
+    "description": "Проект дома Вальс бостон 137 м2",
+    "specifications": {
+      "totalArea": "137.0",
+      "areaOfTheResidential": "100.0",
+      "otherArea": "37.0",
+      "sizeOfHouse": "12.0 * 10.5",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 15,
+    "projectName": "Sonata319",
+    "title": "Соната 319 м2",
+    "desc":"Проект дома Sonata319: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Sonata319",
+    "images": [
+      "Sonata319_1",
+      "Sonata319"
+    ],
+    "plans": [
+      "Sonata319_plan1",
+      "Sonata319_plan2"
+    ],
+    "description": "Проект дома Соната 319 м2",
+    "specifications": {
+      "totalArea": "319.0",
+      "areaOfTheResidential": "230.0",
+      "otherArea": "89.0",
+      "sizeOfHouse": "19.0 * 14.5",
+      "floors": "2",
+      "bedrooms": "5",
+      "garagePlaces": "4",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 16,
+    "projectName": "Regtime158",
+    "title": "Регтайм 158 м2",
+    "desc":"Проект дома Regtime158: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Regtime158",
+    "images": [
+      "Regtime158_1",
+      "Regtime158_2",
+      "Regtime158_3",
+      "Regtime158"
+    ],
+    "plans": [
+      "Regtime158_plan1"
+    ],
+    "description": "Проект дома Регтайм 158 м2",
+    "specifications": {
+      "totalArea": "158.0",
+      "areaOfTheResidential": "115.0",
+      "otherArea": "43.0",
+      "sizeOfHouse": "13.2 * 11.5",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "2",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 17,
+    "projectName": "Regtime154",
+    "title": "Регтайм 154 м2",
+    "desc":"Проект дома Regtime154: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Богомолова А.А",
+    "slug": "project-Regtime154",
+    "images": [
+      "Regtime154_1",
+      "Regtime154_2",
+      "Regtime154"
+    ],
+    "plans": [
+      "Regtime154_plan1"
+    ],
+    "description": "Проект дома Регтайм 154 м2",
+    "specifications": {
+      "totalArea": "154.0",
+      "areaOfTheResidential": "112.0",
+      "otherArea": "42.0",
+      "sizeOfHouse": "13.0 * 11.2",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "2",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 18,
+    "projectName": "Ballada226",
+    "title": "Баллада 226 м2",
+    "desc":"Проект дома Ballada226: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Ballada226",
+    "images": [
+      "Ballada226_1",
+      "Ballada226"
+    ],
+    "plans": [
+      "Ballada226_plan1",
+      "Ballada226_plan2"
+    ],
+    "description": "Проект дома Баллада 226 м2",
+    "specifications": {
+      "totalArea": "226.0",
+      "areaOfTheResidential": "165.0",
+      "otherArea": "61.0",
+      "sizeOfHouse": "16.5 * 12.0",
+      "floors": "2",
+      "bedrooms": "4",
+      "garagePlaces": "2",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 19,
+    "projectName": "Regtime133",
+    "title": "Регтайм 133 м2",
+    "desc":"Проект дома Regtime133: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Зиброва А.Д",
+    "slug": "project-Regtime133",
+    "images": [
+      "Regtime133_1",
+      "Regtime133_2",
+      "Regtime133_3",
+      "Regtime133"
+    ],
+    "plans": [
+      "Regtime133_plan1"
+    ],
+    "description": "Проект дома Регтайм 133 м2",
+    "specifications": {
+      "totalArea": "133.0",
+      "areaOfTheResidential": "96.0",
+      "otherArea": "37.0",
+      "sizeOfHouse": "12.0 * 10.1",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "1",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 20,
+    "projectName": "Regtime152",
+    "title": "Регтайм 152 м2",
+    "desc":"Проект дома Regtime152: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Богомолова А.А",
+    "slug": "project-Regtime152",
+    "images": [
+      "Regtime152_1",
+      "Regtime152_2",
+      "Regtime152"
+    ],
+    "plans": [
+      "Regtime152_plan1"
+    ],
+    "description": "Проект дома Регтайм 152 м2",
+    "specifications": {
+      "totalArea": "152.0",
+      "areaOfTheResidential": "110.0",
+      "otherArea": "42.0",
+      "sizeOfHouse": "13.0 * 11.0",
+      "floors": "2",
+      "bedrooms": "3",
+      "garagePlaces": "2",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "Гибкая черепица",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), плитка клинкерная Cerrad, масло для дерева BIOFA Темный орех"
+    }
+  },
+  {
+    "id": 21,
+    "projectName": "RockNRoll185",
+    "title": "Рок-н-ролл 185 м2",
+    "desc":"Проект дома RockNRoll185: планировки, фото, стоимость строительства под ключ в Кемерово. Готовые решения для вашего комфорта!",
+    "keywords":"построить дом, дом под ключ, проекты домов под ключ, строительство домов Кемерово, каркасные дома под ключ",
+    "floors": "2",
+    "arhitektor":"Богомолова А.А",
+    "slug": "project-RockNRoll185",
+    "images": [
+      "RockNRoll185",
+      "RockNRoll185_1",
+      "RockNRoll185_2",
+      "RockNRoll185_3",
+      "RockNRoll185_4"
+    ],
+    "plans": [
+      "RockNRoll185_plan1"
+    ],
+    "description": "Проект дома Регтайм 152 м2",
+    "specifications": {
+      "totalArea": "185.2",
+      "areaOfTheResidential": "111.6",
+      "otherArea": "73.6",
+      "sizeOfHouse": "17.5 * 16.5",
+      "floors": "1",
+      "bedrooms": "3",
+      "garagePlaces": "",
+      "wallMaterialOnTheFirstFloor": "Кирпич",
+      "wallMaterialOnTheSecondFloor": "Клееный брус",
+      "foundationType": "Свайно-ростверковый",
+      "TypeOfOverlap": "Сборное ж/б, деревянное",
+      "insulation": "Пенопласт",
+      "roof": "ПВХ мембрана",
+      "windows": "ПВХ",
+      "frontDoor": "Металлическая со светопрозрачной фрамугой",
+      "finishing": "Минеральная декоративная штукатурка Ceresit CT35 (Короед), планкен, керамогранит"
+    }
+  }
+]

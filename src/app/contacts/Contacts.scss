@@ -1,0 +1,166 @@
+// @import "../const.scss";
+
+iframe{
+    @media(max-width:992px){
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: 400px;
+    }
+}
+.contacts {
+    .ymaps {
+        margin: 100px 3% 0;
+        width: 94%;
+
+        .map {
+            width: 100%;
+            height: 600px;
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content:space-between;
+        margin: 100px 1% 0;
+        padding: 0 20px;
+
+        .contact-info_card {
+            width: 25%;
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            z-index: 2;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            div {
+                margin-bottom: 20px;
+
+                svg {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            h4 {
+                font-size: 20px;
+                color: #333;
+                font-weight: 400;
+                margin-bottom: 12px;
+                text-transform: uppercase;
+            }
+            h5{
+                font-size: 16px;
+                color: #333;
+                font-weight: 400;
+                margin-bottom: 12px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 400;
+                color: #555;
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .ymaps {
+            margin: 50px 5% 0;
+
+            .map {
+                height: 400px;
+            }
+        }
+
+        .contact-info {
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 5% 0;
+
+            .contact-info_card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-block_image {
+            h1 {
+                font-size: 32px;
+            }
+
+            .div-dec {
+                width: 100%;
+            }
+        }
+
+        .ymaps {
+            margin: 50px 5% 0;
+
+            .map {
+                height: 300px;
+            }
+        }
+
+        .contact-info {
+            flex-direction: column;
+            .contact-info_card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-block_image {
+
+            h1 {
+                padding-top: 20%;
+                font-size: 18px;
+            }
+
+            .div-dec {
+                width: 100px;
+                height: 3px;
+            }
+        }
+
+        .ymaps {
+            .map {
+                height: 200px;
+            }
+        }
+
+        .contact-info {
+            flex-direction: column;
+            margin: 0;
+            margin-top: 100px;
+            padding: 0px 0% !important;
+            margin: 50px 3% 0 !important;
+            .contact-info_card {
+                width: 100%;
+            }
+
+            h4 {
+                font-size: 16px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
