@@ -15,6 +15,33 @@
       }
 }
 
+.footer_copyright {
+  position: absolute;
+  bottom: 40px;
+  @media (max-width:992px) {
+    bottom: 7px;
+  }
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  
+  a {
+    font-size: 16px;
+    color: #FFFFFF !important;
+    margin: 0;
+    font-weight: 400;
+
+    span{
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+}
+
 footer{
     position: relative;
     display: flex;
