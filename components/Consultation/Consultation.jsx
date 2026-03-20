@@ -10,7 +10,7 @@ function Consultation() {
 
   const handleWhatsApp = () => {
     window.open(
-      "https://api.whatsapp.com/send/?phone=79234808330&text=Здравствуйте%21+Пишу+с+сайта.+Хочу+обратиться+по+поводу&type=phone_number&app_absent=0",
+      "https://max.ru/u/f9LHodD0cOJRtuggQMOzpRNL_nNU-UmfUsIFVsCkyA29ihOmzySYtogrmNo",
       "_blank"
     );
   };
