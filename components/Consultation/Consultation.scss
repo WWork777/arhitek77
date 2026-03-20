@@ -167,6 +167,12 @@
       .contact-buttons {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+
+        .btn:nth-child(3):last-child {
+          grid-column: 1 / span 2;
+          justify-self: center;
+          max-width: calc(50% - 10px);
+        }
       }
     }
 

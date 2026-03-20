@@ -47,7 +47,7 @@ export default function Home() {
     <>
       <Hero />
       <Advantages />
-      <HomePromo />
+      {/* <HomePromo /> */}
       <BanksPartners />
       <QuizComponent />
 

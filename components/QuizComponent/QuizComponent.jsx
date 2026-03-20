@@ -120,7 +120,7 @@ const QuizComponent = () => {
   const handleSendWhatsApp = () => {
     const phone = "79234808330"; // ваш номер без "+"
     const text = encodeURIComponent(buildWhatsAppText());
-    const url = `https://api.whatsapp.com/send/?phone=${phone}&text=${text}`;
+    const url = `https://max.ru/u/f9LHodD0cOJRtuggQMOzpRNL_nNU-UmfUsIFVsCkyA29ihOmzySYtogrmNo`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
@@ -297,7 +297,7 @@ const QuizComponent = () => {
             </p>
             <p style={{ fontSize: "20px" }}>
               При нажатии на кнопку "Отправить" Вы будете перенаправлены в
-              WhatsApp
+              Max
             </p>
           </div>
         </div>
