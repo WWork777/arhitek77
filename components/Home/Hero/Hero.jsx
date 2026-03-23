@@ -22,7 +22,8 @@ export default function Hero({
       }
     : { 
         "data-bs-toggle": "modal", 
-        "data-bs-target": "#exampleModa2" 
+        "data-bs-target": "#exampleModal" 
+        // "data-bs-target": "#exampleModa2" 
       };
 
   return (
