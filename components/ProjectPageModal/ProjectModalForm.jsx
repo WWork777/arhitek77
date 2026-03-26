@@ -1,11 +1,30 @@
 "use client";
 import "./ModalForm.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ProjectModalForm() {
   const [formData, setFormData] = useState({ name: "", phone: "" });
   const [status, setStatus] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [modalTitle, setModalTitle] = useState("Узнать стоимость строительства");
+
+  useEffect(() => {
+    const modalElement = document.getElementById("exampleModa2");
+    if (!modalElement) return;
+
+    const handleShow = (event) => {
+      const button = event.relatedTarget;
+      const title = button?.getAttribute("data-bs-title");
+      if (title) {
+        setModalTitle(title);
+      } else {
+        setModalTitle("Узнать стоимость строительства");
+      }
+    };
+
+    modalElement.addEventListener("show.bs.modal", handleShow);
+    return () => modalElement.removeEventListener("show.bs.modal", handleShow);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,6 +37,7 @@ export default function ProjectModalForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    alert("Заявка успешно отправлена!");
     setStatus("");
 
     try {
@@ -62,8 +82,8 @@ export default function ProjectModalForm() {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="project-modal-title fs-5" id="exampleModalLabe2" style={{marginLeft:'25%'}}>
-              Узнать стоимость стоительства
+              <h1 className="project-modal-title fs-5" id="exampleModalLabe2">
+                {modalTitle}
               </h1>
               <button
                 type="button"
@@ -93,7 +113,7 @@ export default function ProjectModalForm() {
                       value={formData.phone}
                       onChange={handleChange}
                       // placeholder="+7 (999) 999-99-99"
-                      pattern="\+7\s?\(?9\d{2}\)?\s?\d{3}-?\d{2}-?\d{2}"
+                      pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
                       required
                     />
                     <span className="bar"></span>
@@ -103,10 +123,9 @@ export default function ProjectModalForm() {
                     Нажимая на кнопку “отправить заявку”, я соглашаюсь с
                     условиями{" "}
                     <a
-                      href="#"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#сonfidentiality"
+                      href="/docs/ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ АРХИТЕК 77.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       политики конфиденциальности
                     </a>

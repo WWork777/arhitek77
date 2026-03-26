@@ -359,7 +359,7 @@ export default function Header() {
                 className="link-more"
                 type="button"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#exampleModa2"
               >
                 <span>ОСТАВИТЬ ЗАЯВКУ</span>
                 <svg

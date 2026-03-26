@@ -6,7 +6,7 @@ export default function Hero({
   backgroundSrc = "/Home/video.mp4",
   title = "Строительство домов под ключ",
   description = "ОПЫТ БОЛЕЕ 25 ЛЕТ",
-  buttonName = "Узнать стоимость",
+  buttonName = "Узнать стоимость строительства",
   buttonType = "default"
 }) {
   const backgroundType = useMemo(() => {
@@ -18,12 +18,13 @@ export default function Hero({
   const buttonAttributes = buttonType === "default" 
     ? { 
         "data-bs-toggle": "modal", 
-        "data-bs-target": "#exampleModal" 
+        "data-bs-target": "#exampleModa2",
+        "data-bs-title": buttonName
       }
     : { 
         "data-bs-toggle": "modal", 
-        "data-bs-target": "#exampleModal" 
-        // "data-bs-target": "#exampleModa2" 
+        "data-bs-target": "#exampleModa2",
+        "data-bs-title": buttonName
       };
 
   return (
@@ -51,7 +52,7 @@ export default function Hero({
             className={`btn ${buttonType === "default" ? "primary-btn" : "secondary-btn"}`}
             {...buttonAttributes}
           >
-            {buttonName}
+            Узнать стоимость
           </button>
         </div>
       </div>

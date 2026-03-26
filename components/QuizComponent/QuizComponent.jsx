@@ -10,6 +10,8 @@ const QuizComponent = () => {
   const [dimensions, setDimensions] = useState({ length: "", width: "" });
   const [selectedTiming, setSelectedTiming] = useState(null);
   const [formData, setFormData] = useState({ name: "", phone: "" });
+  const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // --- DATA ---
   const technologies = [
@@ -44,31 +46,6 @@ const QuizComponent = () => {
     { id: "next-year", name: "В следующем году" },
   ];
 
-  // --- HELPERS ---
-  const formatPhoneNumber = (value) => {
-    const cleaned = value.replace(/[^\d+]/g, "");
-    let numbers = cleaned;
-    if (
-      !numbers.startsWith("+7") &&
-      !numbers.startsWith("7") &&
-      !numbers.startsWith("8")
-    ) {
-      numbers = "+7" + numbers.replace(/\D/g, "");
-    } else if (numbers.startsWith("7")) {
-      numbers = "+" + numbers;
-    } else if (numbers.startsWith("8")) {
-      numbers = "+7" + numbers.slice(1);
-    }
-    numbers = numbers.slice(0, 12);
-
-    let formatted = numbers;
-    if (numbers.length > 2)
-      formatted = numbers.slice(0, 2) + "(" + numbers.slice(2, 5);
-    if (numbers.length > 5) formatted += ")" + numbers.slice(5, 8);
-    if (numbers.length > 8) formatted += numbers.slice(8, 10);
-    if (numbers.length > 10) formatted += numbers.slice(10, 12);
-    return formatted;
-  };
 
   const isStepValid = (step) => {
     switch (step) {
@@ -87,42 +64,12 @@ const QuizComponent = () => {
         return selectedTiming !== null;
       case 4:
         // финальный шаг всегда доступен: пользователь сам пишет в WhatsApp
-        return true;
+        return formData.name.trim() !== "" && formData.phone.trim() !== "";
       default:
         return false;
     }
   };
 
-  const buildWhatsAppText = () => {
-    const tech =
-      technologies.find((t) => t.id === selectedTech)?.name || "Не указано";
-    const floors =
-      floorOptions.find((f) => f.id === selectedFloors)?.name || "Не указано";
-    const timing =
-      timingOptions.find((t) => t.id === selectedTiming)?.name || "Не указано";
-    const size =
-      dimensions.length && dimensions.width
-        ? `${dimensions.length}м x ${dimensions.width}м`
-        : "Не указано";
-
-    const nameLine = formData.name ? `\n👤 Имя: ${formData.name}` : "";
-    const phoneLine = formData.phone ? `\n📞 Телефон: ${formData.phone}` : "";
-
-    const message = `📌 Хочу рассчитать стоимость строительства дома
-🏠 Технология: ${tech}
-🏢 Этажность: ${floors}
-📏 Размеры: ${size}
-⏳ Сроки: ${timing}${nameLine}${phoneLine}`;
-
-    return message;
-  };
-
-  const handleSendWhatsApp = () => {
-    const phone = "79234808330"; // ваш номер без "+"
-    const text = encodeURIComponent(buildWhatsAppText());
-    const url = `https://max.ru/u/f9LHodD0cOJRtuggQMOzpRNL_nNU-UmfUsIFVsCkyA29ihOmzySYtogrmNo`;
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
 
   // --- NAV ---
   const handleNext = () => {
@@ -146,10 +93,51 @@ const QuizComponent = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handlePhoneChange = (e) => {
-    const { value } = e.target;
-    const formatted = formatPhoneNumber(value);
-    setFormData((prev) => ({ ...prev, phone: formatted }));
+  const handleSubmit = async (e) => {
+    if (e) e.preventDefault();
+    setIsSubmitting(true);
+    setStatus("");
+
+    const tech = technologies.find((t) => t.id === selectedTech)?.name || "Не указано";
+    const floors = floorOptions.find((f) => f.id === selectedFloors)?.name || "Не указано";
+    const timing = timingOptions.find((t) => t.id === selectedTiming)?.name || "Не указано";
+    const size = dimensions.length && dimensions.width
+      ? `${dimensions.length}м x ${dimensions.width}м`
+      : "Не указано";
+
+    const details = `🏠 Технология: ${tech}\n🏢 Этажность: ${floors}\n📏 Размеры: ${size}\n⏳ Сроки: ${timing}`;
+
+    try {
+      const response = await fetch("/api/send-telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, details }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("Заявка успешно отправлена!");
+        alert("Заявка успешно отправлена!");
+        setFormData({ name: "", phone: "" });
+        
+        setTimeout(() => {
+           setCurrentStep(0);
+           setSelectedTech(null);
+           setSelectedFloors(null);
+           setDimensions({ length: "", width: "" });
+           setSelectedTiming(null);
+           setStatus("");
+        }, 3000);
+      } else {
+        setStatus("Ошибка при отправке. Попробуйте снова.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("Ошибка при отправке. Попробуйте снова.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // --- AUTOPROCEED ---
@@ -290,30 +278,61 @@ const QuizComponent = () => {
             currentStep === 4 ? styles.active : ""
           }`}
         >
-          <div className={styles.privacyText} style={{ marginTop: "10%" }}>
-            <p style={{ fontSize: "20px" }}>
-              Мы не собираем и не передаем ваши персональные данные, поэтому
-              свяжитесь с нами самостоятельно, пожалуйста.
-            </p>
-            <p style={{ fontSize: "20px" }}>
-              При нажатии на кнопку "Отправить" Вы будете перенаправлены в
-              Max
-            </p>
+          <div className={styles.stepTitle}>
+            Оставьте контакты для получения расчета
           </div>
+          <form onSubmit={handleSubmit} className={styles.contactForm}>
+            <div className={styles.formGroup}>
+              <label>Имя</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleFormChange}
+                required
+                placeholder="Ваше имя"
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <label>Телефон</label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleFormChange}
+                pattern="\+7\s?\(?9\d{2}\)?\s?\d{3}-?\d{2}-?\d{2}"
+                required
+                placeholder="+7 (999) 999-99-99"
+              />
+            </div>
+            <p className={styles.privacyText}>
+              Нажимая на кнопку, вы соглашаетесь с{" "}
+              <a href="#" data-bs-toggle="modal" data-bs-target="#сonfidentiality">
+                политикой конфиденциальности
+              </a>
+            </p>
+            {status && (
+              <p style={{ textAlign: "center", color: status.includes("успешно") ? "green" : "red", marginTop: "10px" }}>
+                {status}
+              </p>
+            )}
+          </form>
         </div>
 
         {/* Навигация */}
         <div className={styles.quizNavigation}>
           <button
+          type="button"
             className={`${styles.quizBtn} ${styles.back}`}
             onClick={handleBack}
-            disabled={currentStep === 0}
+            disabled={currentStep === 0 || isSubmitting}
           >
             Назад
           </button>
 
           {currentStep === 2 && (
             <button
+            type="button"
               className={styles.quizBtn}
               onClick={handleNext}
               disabled={!isStepValid(2)}
@@ -324,12 +343,12 @@ const QuizComponent = () => {
 
           {currentStep === 4 && (
             <button
-              type="button"
+              type="submit"
               className={styles.quizBtn}
-              onClick={handleSendWhatsApp}
-              disabled={!isStepValid(4)}
+              onClick={handleSubmit}
+              disabled={!isStepValid(4) || isSubmitting}
             >
-              Отправить
+              {isSubmitting ? "Отправка..." : "Получить расчет"}
             </button>
           )}
         </div>

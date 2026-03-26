@@ -96,10 +96,9 @@ export default function FormGallery() {
           <span className="conf">
             Нажимая на кнопку “отправить заявку”, я соглашаюсь с условиями{" "}
             <a
-              href="#"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#сonfidentiality"
+              href="/docs/ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ АРХИТЕК 77.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               политики конфиденциальности
             </a>

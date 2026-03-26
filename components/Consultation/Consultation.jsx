@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 import "./Consultation.scss";
 import React from "react";
 import Image from "next/image";
@@ -23,6 +24,55 @@ function Consultation() {
     window.open("https://vk.com/arhitek142", "_blank");
   };
 
+  const [formData, setFormData] = useState({ name: "", phone: "" });
+  const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus("");
+
+    try {
+      const response = await fetch("/api/send-telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("Заявка успешно отправлена!");
+        alert("Заявка успешно отправлена!");
+        setFormData({ name: "", phone: "" });
+
+        setTimeout(() => {
+          const modal = bootstrap.Modal.getInstance(
+            document.getElementById("exampleModal")
+          );
+          modal?.hide();
+          setStatus("");
+        }, 3000); // Закрыть модалку через 3 секунды
+      } else {
+        setStatus("Ошибка при отправке. Попробуйте снова.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("Ошибка при отправке. Попробуйте снова.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="consultation-block">
       <div className="consultation-container">
@@ -33,15 +83,10 @@ function Consultation() {
             </h1>
             <h2 className="consultation-title">Давайте обсудим ваши задачи?</h2>
 
-            <p className="consultation-description">
-              Мы не собираем и не передаем ваши персональные данные, поэтому
-              свяжитесь с нами самостоятельно, пожалуйста
-            </p>
 
             <div className="contact-methods">
-              <h3 className="contact-title">Свяжитесь удобным способом:</h3>
-              <div className="contact-buttons">
-                <button
+
+                {/* <button
                   className="btn-consultation btn-call btn"
                   onClick={handleCall}
                 >
@@ -116,7 +161,57 @@ function Consultation() {
                     <span className="btn-title">Вконтакте</span>
                     <span className="btn-description">Написать сообщение</span>
                   </div>
-                </button>
+                </button> */}
+
+                <div className="modal-body">
+                <form onSubmit={handleSubmit}>
+                  <div className="form-form">
+                    <div className="inputs">
+                      <div className="group">
+                        <input
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                        />
+                        <span className="bar"></span>
+                        <label>Имя</label>
+                      </div>
+                      <div className="group">
+                        <input
+                          type="tel"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          // placeholder="Телефон"
+                          pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+                          required
+                        />
+                        <span className="bar"></span>
+                        <label>Телефон</label>
+                      </div>
+                    </div>
+                    
+                    <span className="conf">
+                      Нажимая на кнопку “отправить заявку”, я соглашаюсь с
+                      условиями{" "}
+                      <a
+                        href="/docs/ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ АРХИТЕК 77.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        политики конфиденциальности
+                      </a>
+                    </span>
+                  </div>
+                  <div className="modal-footer">
+                    <button type="submit" className="btn btn-primary">
+                      {isSubmitting ? "Отправка..." : "Отправить"}
+                    </button>
+                  </div>
+                </form>
+                {status && <p className="form-message">{status}</p>}
               </div>
             </div>
           </div>

@@ -50,7 +50,8 @@ export default function Advantages() {
             type="button"
             className="apply-button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#exampleModa2"
+            data-bs-title="Оставить заявку на обратный звонок"
           >
             Оставить заявку
           </button>

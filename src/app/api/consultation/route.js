@@ -28,10 +28,35 @@ export async function POST(req) {
 📞 <b>Телефон:</b> ${phone}
   `;
 
+  const maxText = `
+    📌 Новая заявка с сайта (Москва)
+    👤 Имя: ${name}
+    📞 Телефон ${phone}
+  `;
+
+
+  const idInstance = '3100517801';
+  const apiTokenInstance = '4e23b210658549c881680633b93bb11301a0f304a927433da6';
+  const maxResponse = await fetch(
+      `https://api.green-api.com/waInstance${idInstance}/SendMessage/${apiTokenInstance}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chatId: `$79235088330@c.us`,
+          message: maxText,
+        }),
+      },
+    );
+
+  if (!maxResponse.ok) {
+    throw new Error("Ошибка при отправке сообщения");
+  }
+
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
   try {
-    const response = await fetch(url, {
+    const TGresponse = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,9 +68,13 @@ export async function POST(req) {
       }),
     });
 
+    const response = (maxResponse || TGresponse)
+
     if (!response.ok) {
-      throw new Error("Ошибка при отправке сообщения в Telegram");
+      throw new Error("Ошибка при отправке сообщения");
     }
+
+    
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {

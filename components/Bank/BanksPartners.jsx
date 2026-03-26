@@ -34,7 +34,9 @@ function BanksPartners() {
 
             <button className="banks-application-btn"  type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal">Узнать подробности</button>
+            data-bs-target="#exampleModa2"
+             data-bs-title="Рассрочка без банка под 0%"
+             >Узнать подробности</button>
           </div>
 
           <div className="banks-logos-block">

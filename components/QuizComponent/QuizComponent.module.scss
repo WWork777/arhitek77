@@ -40,13 +40,13 @@ $input-text: #000000;
 }
 
 .quizStep {
-  display: none;
+  display: none !important;
   flex: 1;
   overflow-y: hidden;
   padding-bottom: 70px;
 
   &.active {
-    display: block;
+    display: block !important;
   }
 }
 
