@@ -1,4 +1,5 @@
 "use client";
+import { PatternFormat } from "react-number-format";
 import { useState, useEffect } from "react";
 import "./Consultation.scss";
 import React from "react";
@@ -38,6 +39,12 @@ function Consultation() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (formData.phone.includes("_") || formData.phone === "") {
+      setStatus("Пожалуйста, введите корректный номер телефона");
+      return;
+    }
+
     setIsSubmitting(true);
     setStatus("");
 
@@ -179,14 +186,24 @@ function Consultation() {
                         <label>Имя</label>
                       </div>
                       <div className="group">
-                        <input
-                          type="tel"
+                        <PatternFormat
+                          format="+7 (###) ###-##-##"
+                          mask="_"
                           name="phone"
                           value={formData.phone}
-                          onChange={handleChange}
-                          // placeholder="Телефон"
-                          pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+                          allowEmptyFormatting={true}
+                          // Используем onValueChange правильно
+                          onValueChange={(values) => {
+                            setFormData((prev) => ({
+                              ...prev,
+                              phone: values.formattedValue, // сохраняем красивый отформатированный номер
+                            }));
+                          }}
+                          // Чтобы не слетал фокус и работали стили
+                          className="phone-input" 
+                          autoComplete="tel"
                           required
+                          placeholder=""
                         />
                         <span className="bar"></span>
                         <label>Телефон</label>
