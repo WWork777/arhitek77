@@ -28,6 +28,18 @@ ${details ? `\n📋 <b>Детали:</b>\n${details}` : ''}
     const idInstance = '3100517801';
     const apiTokenInstance = '4e23b210658549c881680633b93bb11301a0f304a927433da6';
 
+
+    //  // Тестовая отправка в консоль без реальной отправки
+    // console.log("--- TEST SEND ---");
+    // console.log("WhatsApp Message:", maxText);
+    // console.log("Telegram Message:", text);
+    // maxSuccess = true;
+    // tgSuccess = true;
+
+    // if (!maxSuccess && !tgSuccess) {
+    //   throw new Error("Ошибка при отправке во все каналы");
+    // }
+
     try {
       const maxRes = await fetch(`https://api.green-api.com/waInstance${idInstance}/SendMessage/${apiTokenInstance}`, {
         method: "POST",

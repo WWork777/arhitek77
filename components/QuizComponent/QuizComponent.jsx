@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { PatternFormat } from "react-number-format";
 import styles from "./QuizComponent.module.scss";
 
 const QuizComponent = () => {
@@ -95,6 +96,10 @@ const QuizComponent = () => {
 
   const handleSubmit = async (e) => {
     if (e) e.preventDefault();
+    if (formData.phone.includes("_") || formData.phone === "") {
+      setStatus("Пожалуйста, введите корректный номер телефона");
+      return;
+    }
     setIsSubmitting(true);
     setStatus("");
 
@@ -111,7 +116,7 @@ const QuizComponent = () => {
       const response = await fetch("/api/send-telegram", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, details }),
+        body: JSON.stringify({ ...formData, details, phone: formData.phone ? `+7${formData.phone}` : ""}),
       });
 
       const result = await response.json();
@@ -295,14 +300,23 @@ const QuizComponent = () => {
             </div>
             <div className={styles.formGroup}>
               <label>Телефон</label>
-              <input
-                type="tel"
+              <PatternFormat
+                format="+7 (###) ###-##-##"
+                mask="_"
                 name="phone"
                 value={formData.phone}
-                onChange={handleFormChange}
-                pattern="\+7\s?\(?9\d{2}\)?\s?\d{3}-?\d{2}-?\d{2}"
+                allowEmptyFormatting={true}
+                onValueChange={(values) => {
+                  setFormData((prev) => ({
+                    ...prev,
+                    phone: values.value, // сохраняем только цифры без +7
+                  }));
+                }}
+                // Чтобы не слетал фокус и работали стили
+                className="phone-input"
+                autoComplete="tel"
                 required
-                placeholder="+7 (999) 999-99-99"
+                placeholder=""
               />
             </div>
             <p className={styles.privacyText}>

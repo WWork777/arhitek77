@@ -51,7 +51,11 @@ export default function ProjectModalForm() {
       const response = await fetch("/api/send-telegram", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          // Добавляем +7 перед отправкой, если номер введен
+          phone: formData.phone ? `+7${formData.phone}` : ""
+        }),
       });
 
       const result = await response.json();
@@ -124,7 +128,7 @@ export default function ProjectModalForm() {
                         onValueChange={(values) => {
                           setFormData((prev) => ({
                             ...prev,
-                            phone: values.formattedValue, // сохраняем красивый отформатированный номер
+                            phone: values.value, // сохраняем красивый отформатированный номер
                           }));
                         }}
                         // Чтобы не слетал фокус и работали стили
